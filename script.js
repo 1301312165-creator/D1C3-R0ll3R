@@ -8,7 +8,16 @@ rollButton.addEventListener("click", rollDice);
 function rollDice() {
     // Generate a random number between 1 and 6
     let diceResult = Math.floor(Math.random() * 6) + 1;
+    let die1 = Math.floor(Math.random() * 6) + 1;
+    let die2 = Math.floor(Math.random() * 6) + 1;
+    let total = die1 + die2;
+
+    dice1Display.innertext = die1;
+    dice2Display.innertext = die2;
+    toalDisplay.innertext = "Total: " + total;
 
     // Display the result
     resultDisplay.textContent = `You rolled a ${diceResult}!`;
+    
 }
+
