@@ -8,12 +8,19 @@
 </head>
 <body>
     <div id="diceBox">
-    <h1>Dice Roller</h1>
+        <h1>Dice Roller</h1>
         <div id="diceResults">
-            <div id="die1">Die 1: </div>
-            <div id="die2">Die 2: </div>
+            <div class="dieResult">
+                <span>Die 1:</span>
+                <span id="dice1">?</span>
+            </div>
+            <div class="dieResult">
+                <span>Die 2:</span>
+                <span id="dice2">?</span>
+            </div>
         </div>
-    <div id="result">D1C3 R0ll3R!</div>
+        <div id="total">Click to roll!</div>
+    </div>
     <button id="rollButton">Roll Dice</button>
     
     <script src="script.js"></script>
